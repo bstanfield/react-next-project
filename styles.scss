@@ -1,0 +1,14 @@
+$large: 50px;
+$sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+* {
+    font-family: $sans;
+}
+
+h1 {
+  font-size: $large;
+}
+
+.navLink {
+    padding: 10px;
+}

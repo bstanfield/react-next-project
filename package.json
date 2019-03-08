@@ -1,0 +1,33 @@
+{
+  "name": "react-next-project",
+  "version": "1.0.0",
+  "description": "Piloting server-side react project with Next.js from Zeit.",
+  "main": "index.js",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^8.0.3",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bstanfield/react-next-project.git"
+  },
+  "keywords": [
+    "react",
+    "next.js"
+  ],
+  "author": "ben stanfield",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bstanfield/react-next-project/issues"
+  },
+  "homepage": "https://github.com/bstanfield/react-next-project#readme"
+}
