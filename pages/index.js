@@ -1,22 +1,25 @@
-import Link from "next/link";
 import Layout from '../components/Layout'
 import "../styles.scss"
+const R = require('ramda');
 
-class Home extends React.Component {
-constructor(props) {
-    super(props);
-    this.state = {
-        welcome: 'Welcome to the show!'
-    };
-    }
+const generateMessages = (message) => (
+    <p>{message}</p>
+)
 
-    render() {
-        return( 
-            <Layout>
-                <p>{ this.state.welcome }</p>
-            </Layout>
-        ) 
+const Home = ({ custom }) => (
+    <Layout>
+       {R.map(generateMessages, custom.messages)} 
+    </Layout>
+)
+
+Home.getInitialProps = ({pathname, query}) => ({        
+    custom: {
+        messages: [
+            'Test message 1',
+            'Test message 2',
+            'Test message 3'
+        ]
     }
-  }
+});
   
-  export default Home
+export default Home

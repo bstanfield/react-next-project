@@ -15,11 +15,11 @@ export default ({ children, title = 'This is the default title' }) => (
           <a className="navLink">Home</a>
         </Link>
         |
-        <Link className="navLink" href='/about'>
+        <Link href='/about'>
           <a className="navLink">About</a>
         </Link>
         |
-        <Link className="navLink" href='/contact'>
+        <Link href='/contact'>
           <a className="navLink">Contact</a>
         </Link>
       </nav>
@@ -28,6 +28,6 @@ export default ({ children, title = 'This is the default title' }) => (
     {/* Page content */}
     {children}
 
-    <footer>I'm here to stay</footer>
+    <footer>I'm a footer.</footer>
   </div>
 )
