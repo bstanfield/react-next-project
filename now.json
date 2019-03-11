@@ -3,5 +3,8 @@
     "name": "react-nextjs-project",
     "builds": [
         { "src": "next.config.js", "use": "@now/next" }
+    ],
+    "alias": [
+        "sandbox.benstanfield.io"
     ]
 }

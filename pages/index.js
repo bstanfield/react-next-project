@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import "../styles.scss"
+import * as contentful from 'contentful'
 const R = require('ramda');
 
 const generateMessages = (message) => (
